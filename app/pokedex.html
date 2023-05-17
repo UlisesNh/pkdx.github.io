@@ -10,8 +10,18 @@
 </head>
 <body>
     <h1>Pokedex</h1>
-    <input type="text" id="pokeName" placeholder="Nombre de Pokemón">
-    <button>Buscar</button>  
+    <div class="pokedex">
+        <div class="pokePhoto">
+            <img src="../images/pokebola.png" alt="pokemon" id="pokeImg" width="150px">
+        </div>
+        <div class="pokeInfo">
+            <input type="text" placeholder="Pikachu" id="pokeName" name="pokeName">
+            <button onclick="fetchPokemon()">Buscar</button> 
+            <div class="pokeScreen" id="abilities"></div>
+        </div>
+        
+    </div>
+   
 </body>
 <footer>
     <script src="pokedex.js"></script>

@@ -1,0 +1,7 @@
+.pokeScreen{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    width: 100px;
+    border-radius: 2px solid black;
+}
