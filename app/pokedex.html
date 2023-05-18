@@ -9,20 +9,22 @@
     <link rel="stylesheet" href="pokedex.css">
 </head>
 <body>
+    <audio id="mi-audio" autoplay loop>
+        <source src="/app/Main_Theme_-_Pokemon_Red__Pokemon_Blue_Melee_-_Super_Smash_Bros.mp3" type="audio/mp3">
+      </audio>
+
     <h1>Pokedex</h1>
-    <div class="pokedex">
-        <div class="pokePhoto">
-            <img src="../images/pokebola.png" alt="pokemon" id="pokeImg" width="150px">
-        </div>
-        <div class="pokeInfo">
-            <input type="text" placeholder="Pikachu" id="pokeName" name="pokeName">
-            <button onclick="fetchPokemon()">Buscar</button> 
-            <div class="pokeScreen" id="abilities"></div>
-        </div>
-        
-    </div>
-   
-</body>
+    
+    <div class="container"></div>
+            <div class="pokedex">
+                <div class="pokePhoto">
+                    <img src="../images/pokebola.png" alt="pokemon" id="pokeImg" width="150px">
+                </div>
+                <div class="pokeScreen" id="abilities"></div>  
+                <input type="text" placeholder="Pikachu" id="pokeName" name="pokeName">
+                <button onclick="fetchPokemon()">Buscar</button> 
+            </div>
+    </body>   
 <footer>
     <script src="pokedex.js"></script>
 </footer>

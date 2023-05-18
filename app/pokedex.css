@@ -1,7 +1,104 @@
-.pokeScreen{
-    display: flex;
-    align-items: center;
-    background-color: gray;
-    width: 100px;
-    border-radius: 2px solid black;
+/* Estilos generales */
+#mi-audio {
+  display: none;
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/bosque.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Estilos de la Pokédex */
+  .pokedex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 0;
+    color: white;
+  }
+  
+  .pokePhoto {
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 40px;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    border: solid 3px black;
+  }
+  
+  #pokeImg {
+    width: 150px;
+  }
+  
+  #pokeName {
+    width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #10c22e;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .pokeScreen {
+    height: 50px;
+    width: 190px;
+    background-color: #918e8e;
+    padding: 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 7px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    /* Estilos para pantallas de celulares */
+    .pokedex {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .pokePhoto {
+      margin-bottom: 10px;
+    }
+  
+    #pokeImg {
+      width: 100px;
+    }
+  
+    #pokeName {
+      width: 150px;
+    }
+  
+    button {
+      margin-top: 5px;
+    }
+  
+    .pokeScreen {
+      width: 160px;
+    }
+  }
+  
